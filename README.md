@@ -54,3 +54,4 @@ mini-siem-log-analyzer/
 │   ├── logs.html
 │   └── alerts.html
 └── static/
+
