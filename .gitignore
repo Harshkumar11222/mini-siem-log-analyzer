@@ -1,0 +1,13 @@
+# Virtual env
+venv/
+
+# Cache
+__pycache__/
+*.pyc
+
+# Outputs (keep sample files only if you want)
+outputs/siem.db
+
+# System files
+.DS_Store
+Thumbs.db
