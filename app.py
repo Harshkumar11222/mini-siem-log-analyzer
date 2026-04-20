@@ -300,5 +300,13 @@ def alerts():
     conn.close()
     return render_template("alerts.html", rows=rows)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+
+
+import streamlit as st
+
+st.title("Mini SIEM Dashboard")
+
+st.write("Log Analysis System")
+
+if st.button("Test Alert"):
+    st.success("Alert Triggered 🚨")
