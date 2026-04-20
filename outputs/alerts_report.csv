@@ -1,0 +1,2 @@
+alert_type,ip,attempts,time_window_minutes,severity
+BRUTE_FORCE,203.0.113.25,3,5,HIGH

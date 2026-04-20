@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>Alerts - Mini SIEM</title>
+</head>
+<body>
+  <h2>🚨 Alerts</h2>
+  <a href="/">⬅ Back</a>
+
+  <table border="1" cellpadding="6">
+    <tr>
+      <th>Type</th><th>IP</th><th>Attempts</th><th>Severity</th>
+    </tr>
+    {% for r in rows %}
+    <tr>
+      <td>{{ r["alert_type"] }}</td>
+      <td>{{ r["ip"] }}</td>
+      <td>{{ r["attempts"] }}</td>
+      <td>{{ r["severity"] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
