@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Mini SIEM - Log Analyzer (Python + Flask)
 
 A mini SIEM (Security Information and Event Management) project that parses Linux SSH authentication logs, detects suspicious activities (brute-force attacks, suspicious usernames), assigns risk scores, stores data in SQLite, and provides a Flask web dashboard.
@@ -112,5 +112,3 @@ mini-siem-log-analyzer/
 │   ├── logs.html
 │   └── alerts.html
 └── static/
-
->>>>>>> 059599b3a8ea3dafdfd515ea68955b2768e24c17

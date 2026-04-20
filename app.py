@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from flask import Flask, render_template, request
 import sqlite3
 from pathlib import Path
@@ -196,9 +195,6 @@ def alerts():
     conn.close()
     return render_template("alerts.html", rows=rows)
 
-#if __name__ == "__main__":
- # app.run(debug=True)
-=======
 from flask import Flask, render_template, request
 import sqlite3
 from pathlib import Path
@@ -306,4 +302,3 @@ def alerts():
 
 if __name__ == "__main__":
     app.run(debug=True)
->>>>>>> 059599b3a8ea3dafdfd515ea68955b2768e24c17

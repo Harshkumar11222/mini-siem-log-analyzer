@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 Jan 10 10:10:12 server sshd[1234]: Failed password for root from 203.0.113.25 port 44321 ssh2
 Jan 10 10:10:15 server sshd[1235]: Failed password for admin from 203.0.113.25 port 44322 ssh2
 Jan 10 10:10:19 server sshd[1236]: Accepted password for harsh from 198.51.100.10 port 55432 ssh2
 Jan 10 10:11:03 server sshd[1237]: Failed password for invalid user test from 203.0.113.25 port 44323 ssh2
-=======
-Jan 10 10:10:12 server sshd[1234]: Failed password for root from 203.0.113.25 port 44321 ssh2
-Jan 10 10:10:15 server sshd[1235]: Failed password for admin from 203.0.113.25 port 44322 ssh2
-Jan 10 10:10:19 server sshd[1236]: Accepted password for harsh from 198.51.100.10 port 55432 ssh2
-Jan 10 10:11:03 server sshd[1237]: Failed password for invalid user test from 203.0.113.25 port 44323 ssh2
->>>>>>> 059599b3a8ea3dafdfd515ea68955b2768e24c17
