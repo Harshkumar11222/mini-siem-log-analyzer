@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Virtual env
 venv/
 
@@ -11,3 +12,18 @@ outputs/siem.db
 # System files
 .DS_Store
 Thumbs.db
+=======
+# Virtual env
+venv/
+
+# Cache
+__pycache__/
+*.pyc
+
+# Outputs (keep sample files only if you want)
+outputs/siem.db
+
+# System files
+.DS_Store
+Thumbs.db
+>>>>>>> 059599b3a8ea3dafdfd515ea68955b2768e24c17

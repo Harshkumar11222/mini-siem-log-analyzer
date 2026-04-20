@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
 <head>
@@ -45,3 +46,52 @@
   </table>
 </body>
 </html>
+=======
+<!doctype html>
+<html>
+<head>
+  <title>Logs - Mini SIEM</title>
+</head>
+<body>
+  <h2>📄 Logs (with Filters)</h2>
+  <a href="/">⬅ Back</a>
+
+  <h3>🔎 Filter Logs</h3>
+  <form method="GET" action="/logs">
+    <label>IP:</label>
+    <input type="text" name="ip" value="{{ ip_filter }}" placeholder="203.0.113.25">
+
+    <label>Event Type:</label>
+    <select name="event_type">
+      <option value="">All</option>
+      {% for e in event_types %}
+      <option value="{{ e }}" {% if event_filter==e %}selected{% endif %}>{{ e }}</option>
+      {% endfor %}
+    </select>
+
+    <label>Min Risk:</label>
+    <input type="text" name="min_risk" value="{{ min_risk }}" placeholder="ex: 50">
+
+    <button type="submit">Apply</button>
+  </form>
+
+  <br>
+
+  <table border="1" cellpadding="6">
+    <tr>
+      <th>Time</th><th>Type</th><th>User</th><th>IP</th><th>Risk</th><th>Flags</th>
+    </tr>
+    {% for r in rows %}
+    <tr>
+      <td>{{ r["timestamp"] }}</td>
+      <td>{{ r["event_type"] }}</td>
+      <td>{{ r["username"] }}</td>
+      <td>{{ r["ip"] }}</td>
+      <td>{{ r["risk_score"] }}</td>
+      <td>{{ r["flags"] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
+>>>>>>> 059599b3a8ea3dafdfd515ea68955b2768e24c17

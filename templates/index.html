@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
 <head>
@@ -43,3 +44,50 @@
   </p>
 </body>
 </html>
+=======
+<!doctype html>
+<html>
+<head>
+  <title>Mini SIEM Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>✅ Mini SIEM Dashboard</h1>
+
+  <h3>Stats</h3>
+  <p>Total Events: <b>{{ total_events }}</b></p>
+  <p>Total Alerts: <b>{{ total_alerts }}</b></p>
+
+  <h3>Top Attacker IPs</h3>
+  <ul>
+    {% for ip in top_ips %}
+      <li>{{ ip["ip"] }} - {{ ip["cnt"] }} attempts</li>
+    {% endfor %}
+  </ul>
+
+  <h3>📊 Event Type Chart</h3>
+  <canvas id="eventChart" width="400" height="200"></canvas>
+
+  <script>
+    const labels = {{ chart_labels | tojson }};
+    const values = {{ chart_values | tojson }};
+
+    new Chart(document.getElementById("eventChart"), {
+      type: "bar",
+      data: {
+        labels: labels,
+        datasets: [{
+          label: "Event Counts",
+          data: values
+        }]
+      }
+    });
+  </script>
+
+  <p>
+    <a href="/logs">View Logs</a> |
+    <a href="/alerts">View Alerts</a>
+  </p>
+</body>
+</html>
+>>>>>>> 059599b3a8ea3dafdfd515ea68955b2768e24c17
