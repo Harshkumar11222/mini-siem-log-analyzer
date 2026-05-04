@@ -310,3 +310,4 @@ st.write("Log Analysis System")
 
 if st.button("Test Alert"):
     st.success("Alert Triggered 🚨")
+    
