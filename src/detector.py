@@ -3,6 +3,7 @@ from pathlib import Path
 from collections import defaultdict
 from datetime import datetime
 
+
 INPUT_FILE = Path("outputs/parsed_logs.json")
 ALERTS_FILE = Path("outputs/alerts.json")
 
