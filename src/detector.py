@@ -6,6 +6,7 @@ from datetime import datetime
 INPUT_FILE = Path("outputs/parsed_logs.json")
 ALERTS_FILE = Path("outputs/alerts.json")
 
+
 # Settings
 BRUTEFORCE_THRESHOLD = 3   # demo ke liye 3 (real world: 10)
 TIME_WINDOW_MINUTES = 5
