@@ -5,6 +5,7 @@ from pathlib import Path
 ALERTS_FILE = Path("outputs/alerts.json")
 DB_FILE = Path("outputs/siem.db")
 
+
 def init_db(conn):
     cur = conn.cursor()
     cur.execute("""
