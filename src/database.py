@@ -2,6 +2,7 @@ import json
 import sqlite3
 from pathlib import Path
 
+
 ALERTS_FILE = Path("outputs/alerts.json")
 DB_FILE = Path("outputs/siem.db")
 
