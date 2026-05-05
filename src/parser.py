@@ -2,6 +2,7 @@ import re
 import json
 from pathlib import Path
 
+
 LOG_FILE = Path("logs/sample_auth.log")
 OUTPUT_FILE = Path("outputs/parsed_logs.json")
 
