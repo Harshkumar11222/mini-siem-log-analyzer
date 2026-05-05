@@ -6,6 +6,7 @@ DB_FILE = Path("outputs/siem.db")
 EVENTS_REPORT = Path("outputs/report.csv")
 ALERTS_REPORT = Path("outputs/alerts_report.csv")
 
+
 def export_query_to_csv(conn, query, csv_path):
     cur = conn.cursor()
     cur.execute(query)
