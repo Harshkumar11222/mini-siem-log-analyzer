@@ -15,6 +15,7 @@ Thumbs.db
 # Virtual env
 venv/
 
+
 # Cache
 __pycache__/
 *.pyc
